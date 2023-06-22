@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Home Page</title>
+	<style>
+		#imgpar{
+    position: relative;
+    display: inline-block;
+}
+#imgblock{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#imgblock a{
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+}
+#imgblock a:hover{
+    background-color: #f1f1f1;
+}
+#imgpar:hover #imgblock{
+    display: block;
+} 
+body{
+    background-image: url("images/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+   
+    
+}
+*{
+    cursor:url("1.cur"), auto;
+}
+*:hover{
+    cursor:url("1.cur"), auto;
+}
+*{
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+h1{ 
+      text-align: center;
+}
+h3{
+    position: fixed;
+    right:5px;
+    bottom:0px;
+}
+#limai{
+   width: 70px;
+   height: 70px;
+}
+div p{
+     text-align: center;
+}
+#byone{
+    width:30px;
+    height: 30px;
+}
+	</style>
+</head>
+<body>
+	<div id="imgpar">
+	  <img src="images/1.jpg" id="limai">
+		<div id="imgblock">
+		<a href="login.html">login</a>
+		<a href="register.html">register</a>
+		</div>
+    </div>
+	<h1>Hello! Welcome to limai's page</h1><br>
+	<div><p>in this page,you can login and upload your e-book and there will be a forum in the future</p></div>
+	<h3>by:<img src="images/1.jpg" id="byone"/></h3>
+</body>
+</html>
