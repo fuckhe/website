@@ -18,9 +18,14 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $sql = "update users set password ='$hashed_password' where username='$username'";
 mysqli_query($conn,$sql);
 
+
+
+
 //验证用户名和密码是否正确
 $sql = "select * from users where username='$username'";
 $result = mysqli_query($conn,$sql);
+
+
 
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -28,7 +33,7 @@ if (mysqli_num_rows($result) > 0) {
     if (password_verify($password, $row['password'])) {
         // 如果用户名和密码正确，将用户信息保存到会话中，并将用户重定向到主页
         $_SESSION['username'] = $username;
-        header('Location: unload.php');
+        header('Location: main.html');
         exit();
     } else {
         // 如果密码不正确，返回错误信息
