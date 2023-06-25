@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传pdf文件</title>
+</head>
+<body>
+    <h1 align="center">图书馆</h1>
+    <h3 align="left">请上传书籍 文件格式为:pdf</h3>
+    <form action = "unload.php" method="post" enctype="multipart/form-data">
+        <label for="file">选择pdf文件:</label>
+        <input type ="file" id="file" name="file"><br><br>
+        <input type = "submit" value = "上传">
+    </form>
+</body>
+</html>
